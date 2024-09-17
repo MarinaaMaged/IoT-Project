@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: radial-gradient(circle at 20% 30%, #1c2b4d 10%, #070b1a 50%);
+    background-size: cover;
+    color: #f2f4f6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d7eaf8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #f2f4f6;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-size: 26px;
+    margin: 30px 0;
+    padding-left: 40px;
+    color: #f2f4f6;
+}
+
+/* Video Card Section */
+.video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.video-card {
+    background: #ffffff10;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 500px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: none;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    margin-top: auto;
+    padding: 20px;
+    background-color: #d7eaf8;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.log-out {
+    height: 70%;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    color: #020202;
+    font-weight: 900;
+    font-size: large;
+    /* margin: 10px; */
+background-color: #d7eaf8;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}

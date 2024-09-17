@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'Open Sans',sans-serif;
+    background: radial-gradient(circle at 20% 30%, #1c2b4d 10%, #070b1a 50%), 
+                url('website\images\gym-website-1024x502.jpg') no-repeat center center; /* Add image on top of gradient */
+    background-size: cover; /* Adjust the size of the background image */
+    height: 100vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 20px;
+    background-color: #d7eaf8;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+}
+nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+.dashboard {
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #f7f7f7;
+}
+
+p {
+    color: #f9f5f5;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background-color: #f4f6e8;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 24px;
+    color: #000;
+}
+footer {
+    color: rgb(0, 0, 0);
+    margin-top: auto; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #d7eaf8;
+    font-size: 12px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #000;
+  }
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.log-out {
+    height: 70%;
+    width:100%;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    cursor:pointer;
+    color: #020202;
+    font-weight: 900;
+    font-size: large;
+    margin: 10px;
+background-color: #d7eaf8;
+}
